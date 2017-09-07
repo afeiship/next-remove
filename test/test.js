@@ -60,6 +60,18 @@ describe('next-remove', function () {
   });
 
 
+  it('remove pure items use callback', function () {
+    var array = [1, 2, 3, 4];
+    var evens = nx.remove(array, function(index, item ) {
+      return item % 2 == 0;
+    });
+
+    assert.deepEqual(evens, [1,3]);
+  });
+
+
+
+
 
 
 
