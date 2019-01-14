@@ -9,6 +9,7 @@ npm install -S afeiship/next-remove
 ## usage:
 ```js
 import 'next-remove';
+
 const ary1 = [1,2,3,4,5];
 const ary2 = [
   { key: 1, value: 'value1' },
