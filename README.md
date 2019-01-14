@@ -16,10 +16,14 @@ const ary2 = [
   { key: 3, value: 'value3' },
   { key: 4, value: 'value4' }
 ];
+
+// 1. remove pure item:
 nx.remove(ary1, [1,2,3]);
 // result:
 [4,5]
 
+
+// 2. remove by a filter:
 nx.remove(ary2, (_,item)=>{
   return item.key>2;
 });
