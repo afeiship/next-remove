@@ -4,9 +4,11 @@ require('../src/next-remove');
 test('remove pure items', function() {
   var ary1 = [1, 2, 3, 4, 5, 6];
   var ary2 = ['a', 'b', 'c', 'd', 'e'];
+  var ary3_uniq = ['a', 'b', 'c', 'd', 'e', 'a', 'c', 'e'];
 
   expect(nx.remove(ary1, [1]).join('')).toBe('23456');
-  expect(nx.remove(ary2, ['d', 'e']).join('')).toBe('abc');
+  expect(nx.remove(ary2, ['c', 'e'])).toEqual(['a', 'b', 'd']);
+  expect(nx.remove(ary3_uniq, ['c', 'e'])).toEqual(['a', 'b', 'd', 'a', 'c', 'e']);
 });
 
 test('remove object items', function() {
