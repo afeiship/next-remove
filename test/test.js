@@ -68,3 +68,19 @@ test('remove pure items use callback', function() {
 
   expect(evens).toEqual([1, 3]);
 });
+
+test('remove pure items use bussiness data', function() {
+  var array = ['1120002607', '@@@YOYDiff(${1120002607})'];
+  var obj = {};
+  nx.defineProperty(obj, 'items', {
+    get: function() {
+      return ['1120002607', '@@@YOYDiff(${1120002607})'];
+    }
+  });
+
+  var res = nx.remove(array, function(index, item) {
+    return item === '@@@YOYDiff(${1120002607})';
+  });
+
+  expect(evens).toEqual(['1120002607']);
+});
