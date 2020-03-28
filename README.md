@@ -1,14 +1,14 @@
 # next-remove
 > Remove a item from array based on next.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-remove
+npm install -S @feizheng/next-remove
 ```
 
-## usage:
+## usage
 ```js
-import 'next-remove';
+import '@feizheng/next-remove';
 
 const ary1 = [1,2,3,4,5];
 const ary2 = [
@@ -34,5 +34,4 @@ nx.remove(ary2, (_,item)=>{
   { key: 1, value: 'value1' },
   { key: 2, value: 'value2' },
 ]
-
 ```
