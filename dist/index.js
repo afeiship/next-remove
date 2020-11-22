@@ -3,7 +3,7 @@
  * description: Remove a item from array based on next.
  * homepage: https://github.com/afeiship/next-remove
  * version: 1.0.0
- * date: 2020-11-22 13:50:49
+ * date: 2020-11-22 13:51:38
  * license: MIT
  */
 
