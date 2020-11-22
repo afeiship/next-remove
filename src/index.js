@@ -1,20 +1,10 @@
-/*!
- * name: @feizheng/next-remove
- * description: Remove a item from array based on next.
- * url: https://github.com/afeiship/next-remove
- * version: 1.0.0
- * date: 2020-03-28 13:37:54
- * license: MIT
- */
-
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var FUNCTION = 'function';
 
   //todo: Polyfill -> Array.prototype.indexOf(el)
-
-  nx.remove = function(inArray, inTarget) {
+  nx.remove = function (inArray, inTarget) {
     var index, length;
     var idx;
 
@@ -43,5 +33,3 @@
     module.exports = nx.remove;
   }
 })();
-
-//# sourceMappingURL=next-remove.js.map

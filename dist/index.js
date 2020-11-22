@@ -1,11 +1,19 @@
-(function() {
+/*!
+ * name: @jswork/next-remove
+ * description: Remove a item from array based on next.
+ * homepage: https://github.com/afeiship/next-remove
+ * version: 1.0.0
+ * date: 2020-11-22 13:50:49
+ * license: MIT
+ */
+
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var FUNCTION = 'function';
 
   //todo: Polyfill -> Array.prototype.indexOf(el)
-
-  nx.remove = function(inArray, inTarget) {
+  nx.remove = function (inArray, inTarget) {
     var index, length;
     var idx;
 
